@@ -68,3 +68,38 @@ Counting Sort works like this:
 - **Limited Applicability**: Counting Sort is most effective when the range of input values is known and relatively small. It may not be suitable for sorting data with a wide range of values or non-integer data.
 
 In summary, Counting Sort is a straightforward and efficient algorithm for sorting integers within a limited range. It excels in scenarios where the input data characteristics align with its strengths, offering a linear time complexity and stability in preserving the order of equal elements.
+
+==========================================================
+
+
+**HEAP SORTING:**
+
+Heap Sort is an efficient and in-place comparison-based sorting algorithm that works by first building a binary max-heap or min-heap from the input array and then repeatedly extracting the root element (the largest or smallest, depending on the heap type) until the entire array is sorted.
+
+**Key Points:**
+
+Heap Data Structure: Heap Sort relies on the properties of the binary heap data structure, which can be thought of as a nearly complete binary tree. In a max-heap, each parent node has a value greater than or equal to its children, while in a min-heap, each parent node has a value less than or equal to its children.
+
+**In-Place Sorting:** 
+
+Heap Sort is an in-place sorting algorithm, meaning it doesn't require additional memory beyond the input array. It operates directly on the input data.
+
+**Time Complexity:** 
+
+Heap Sort has a time complexity of O(n log n), making it efficient for sorting large datasets. Its worst-case and average-case time complexities are both O(n log n).
+
+**Stability:**
+
+Heap Sort is not a stable sorting algorithm, as it may change the relative order of equal elements during the sorting process.
+
+**EXPLANATION OF THE CODE:**
+
+Heap Sort operates as follows:
+
+It first builds a heap from the input array. This involves transforming the array into a valid max-heap or min-heap, depending on the desired sorting order.
+It repeatedly extracts the root element of the heap, which is the largest (for max-heap) or smallest (for min-heap) element, and places it at the end of the array.
+As elements are extracted, the heap is maintained to ensure the next root element can be efficiently extracted.
+The process continues until all elements have been extracted and placed in the correct order, resulting in a sorted array.
+
+
+
