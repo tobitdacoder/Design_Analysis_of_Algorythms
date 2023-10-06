@@ -34,3 +34,37 @@ NOTE: This process is repeated until the entire list is sorted.
 
 ==========================================================
 
+
+
+**COUNTING SORTING:**
+
+Counting Sort is a non-comparison-based sorting algorithm that works particularly well for sorting integers with a limited range of values. It's known for its simplicity and efficiency when applied to such datasets.
+
+Key Points:
+
+1. **Counting Sort Overview**: Counting Sort is a simple sorting algorithm that works by counting the frequency of each distinct element in the input array and then placing them in the correct sorted order.
+
+2. **Applicability**: Counting Sort is most effective when sorting integers within a specific range, making it well-suited for scenarios where the input data has a known upper and lower bound.
+
+3. **Stability**: Counting Sort is a stable sorting algorithm, meaning it preserves the relative order of equal elements in the sorted output.
+
+4. **Time Complexity**: Counting Sort has a time complexity of O(n + k), where n is the number of elements to be sorted, and k is the range of possible input values. In cases where k is significantly smaller than n, Counting Sort can be extremely fast.
+
+**EXPLANATION OF THE CODE:**
+
+Counting Sort works like this:
+
+- It counts the frequency of each distinct element in the input array and stores these counts in a counting array.
+- It calculates the cumulative counts to determine the correct positions of elements in the sorted output.
+- It iterates through the original array, placing each element in its correct sorted position based on the cumulative counts.
+- The sorted array is formed.
+
+**ANALYSIS:**
+
+- **Time Complexity**: Counting Sort's time complexity is linear, O(n + k), making it highly efficient when the range of input values (k) is small compared to the number of elements (n).
+
+- **Stability**: Counting Sort is a stable sorting algorithm, meaning it maintains the relative order of equal elements in the sorted output.
+
+- **Limited Applicability**: Counting Sort is most effective when the range of input values is known and relatively small. It may not be suitable for sorting data with a wide range of values or non-integer data.
+
+In summary, Counting Sort is a straightforward and efficient algorithm for sorting integers within a limited range. It excels in scenarios where the input data characteristics align with its strengths, offering a linear time complexity and stability in preserving the order of equal elements.
